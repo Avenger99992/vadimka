@@ -7,7 +7,7 @@ public class Menu {
     static Players newplayer2 = new Players();
     static void menu ()
     {
-        int i=0;
+        int i;
         if (Army.val < 5&&Army.gold>700) {
             Scanner in = new Scanner(System.in);
             System.out.println("Выбор войск:");
@@ -17,6 +17,7 @@ public class Menu {
             System.out.println("4. маги 700 голды");
             i = in.nextInt();
             Army.push(i);
+            // vadimka loh
         }
         else {
             System.out.println("Армия укомплектована");
